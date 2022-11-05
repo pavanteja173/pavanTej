@@ -9,10 +9,10 @@ public class BasicAuthCons {
 
 	public void basicmain() {
 		
-		 baseURI="https://api.github.com";
+		 baseURI="https://github.com/";
 		 
 		 given().auth().basic("pavanteja173", "Pavan@988")
-		 .when().get("/user/repos").then().log().all();
+		 .when().get("/login").then().log().all();
 
 	}
 

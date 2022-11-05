@@ -11,8 +11,8 @@ public class BarerTokenCons {
 	public void barermain() {
 		 baseURI="https://api.github.com";
 		JSONObject obj = new JSONObject();
-		obj.put( "name", "petgit12");
-		given().auth().oauth2("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")
+		obj.put( "name", "PetConsultentCons2");
+		given().auth().oauth2("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")
 		.body(obj).contentType(ContentType.JSON)
 		
 		.when().post("/user/repos")
